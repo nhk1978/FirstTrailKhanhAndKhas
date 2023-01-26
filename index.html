@@ -14,11 +14,19 @@
       Thank you for taking the time to help us improve the platform
     </p>
     <form id="survey-form">
-      <input required id="name" type="text">
-      <input required id="email" type="text">
-      <input id="number" type="text">
-
-  </form>
+      <div>
+        <label id="name-label" for="name">name</label>
+        <input required id="name" type="text" placeholder="Name" />
+      </div>
+      <div>
+        <label id="email-label" for="email">email</label>
+        <input required id="email" type="text" placeholder="Email" />
+      </div>
+      <div>
+        <label id="number-label">number</label>
+        <input id="number" type="number" min="0" max="8" placeholder="number" />
+      </div>
+    </form>
     <script src="js/index.js"></script>
   </body>
 </html>
